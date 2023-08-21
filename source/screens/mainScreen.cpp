@@ -50,7 +50,7 @@ MainScreen::MainScreen() {
 	StoreUtils::meta = std::make_unique<Meta>();
 
 	/* Check if lastStore is accessible. */
-	if (config->lastStore() != "universal-db.unistore" && config->lastStore() != "") {
+	if (config->lastStore() != "StreetPass-Shop.unistore" && config->lastStore() != "") {
 		if (access((_STORE_PATH + config->lastStore()).c_str(), F_OK) != 0) {
 			config->lastStore("universal-db.unistore");
 
