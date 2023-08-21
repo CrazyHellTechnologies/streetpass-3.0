@@ -52,26 +52,26 @@ Theme::Theme(const std::string &ThemeJSON) {
 nlohmann::json Theme::InitWithDefaultColors(const std::string &ThemePath) {
 	nlohmann::json JS = {
 		{ "Default", {
-			{ "BarColor", "#324962" },
-			{ "BGColor", "#262C4D" },
-			{ "BarOutline", "#191E35" },
+			{ "BarColor", "#1A1A1A" },
+			{ "BGColor", "#0F0F0F" },
+			{ "BarOutline", "#2A2A2A" },
 			{ "TextColor", "#FFFFFF" },
-			{ "EntryBar", "#324962" },
-			{ "EntryOutline", "#191E35" },
-			{ "BoxInside", "#1C213A" },
-			{ "BoxSelected", "#6C829B" },
+			{ "EntryBar", "#9B59B6" },
+			{ "EntryOutline", "#8E44AD" },
+			{ "BoxInside", "#16A085" },
+			{ "BoxSelected", "#2980B9" },
 			{ "BoxUnselected", "#000000" },
-			{ "ProgressbarOut", "#1C213A" },
-			{ "ProgressbarIn", "#4D6580" },
-			{ "SearchBar", "#334B66" },
-			{ "SearchBarOutline", "#191E35" },
-			{ "SideBarSelected", "#6C829B" },
-			{ "SideBarUnselected", "#4D6580" },
-			{ "MarkSelected", "#4D6580" },
-			{ "MarkUnselected", "#1C213A" },
-			{ "DownListPrev", "#1C213A" },
-			{ "SideBarIconColor", "#ADCCEF" },
-			{ "Description", "Universal-Updater's default Theme.\n\nBy: Universal-Team" }
+			{ "ProgressbarOut", "#27AE60" },
+			{ "ProgressbarIn", "#2ECC71" },
+			{ "SearchBar", "#F1C40F" },
+			{ "SearchBarOutline", "#34495E" },
+			{ "SideBarSelected", "#E67E22" },
+			{ "SideBarUnselected", "#1A1A1A" },
+			{ "MarkSelected", "#E74C3C" },
+			{ "MarkUnselected", "#C0392B" },
+			{ "DownListPrev", "#9B59B6" },
+			{ "SideBarIconColor", "#FFFFFF" },
+			{ "Description", "A Deluxe Theme\n\nBy : MattTheTekie" }
 		}}
 	};
 
