@@ -981,7 +981,7 @@ std::vector<StoreList> FetchStores() {
 
 	CURL *hnd = curl_easy_init();
 
-	ret = setupContext(hnd, "https://github.com/Universal-Team/Universal-Updater/raw/master/resources/UniStores.json");
+	ret = setupContext(hnd, "https://github.com/sdkpaint/streetpass-3.0/raw/master/resources/UniStores.json");
 	if (ret != 0) {
 		socExit();
 		free(result_buf);
