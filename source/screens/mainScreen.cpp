@@ -75,8 +75,8 @@ MainScreen::MainScreen() {
 		if (access("sdmc:/3ds/Universal-Updater/stores/universal-db.unistore", F_OK) != 0) {
 			if (checkWifiStatus()) {
 				std::string tmp = ""; // Just a temp.
-				DownloadUniStore("https://db.universal-team.net/unistore/universal-db.unistore", -1, tmp, true, true);
-				DownloadSpriteSheet("https://db.universal-team.net/unistore/universal-db.t3x", "universal-db.t3x");
+				DownloadUniStore("https://github.com/sdkpaint/streetpass-3.0-config/raw/master/unistore/StreetPass-Shop.unistore", -1, tmp, true, true);
+				DownloadSpriteSheet("https://raw.githubusercontent.com/sdkpaint/streetpass-3.0-config/master/unistore/StreetPass-Shop.t3x", "universal-db.t3x");
 
 			} else {
 				notConnectedMsg();
@@ -88,8 +88,8 @@ MainScreen::MainScreen() {
 			if (info.Version != 3 && info.Version != _UNISTORE_VERSION) {
 				if (checkWifiStatus()) {
 					std::string tmp = ""; // Just a temp.
-					DownloadUniStore("https://db.universal-team.net/unistore/universal-db.unistore", -1, tmp, true, true);
-					DownloadSpriteSheet("https://db.universal-team.net/unistore/universal-db.t3x", "universal-db.t3x");
+					DownloadUniStore("https://github.com/sdkpaint/streetpass-3.0-config/raw/master/unistore/StreetPass-Shop.unistore", -1, tmp, true, true);
+					DownloadSpriteSheet("https://raw.githubusercontent.com/sdkpaint/streetpass-3.0-config/master/unistore/StreetPass-Shop.t3x", "universal-db.t3x");
 
 				} else {
 					notConnectedMsg();
