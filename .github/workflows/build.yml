@@ -51,8 +51,8 @@ jobs:
         run: |
           make
           mkdir -p ~/artifacts
-          cp StreetPass-Shop.3dsx ~/artifacts
-          cp StreetPass-Shop.cia ~/artifacts
+          cp *.3dsx ~/artifacts
+          cp *.cia ~/artifacts
           echo ::set-output name=commit_tag::$(git describe --abbrev=0 --tags)
           echo ::set-output name=commit_hash::$(git log --format=%h -1)
 
