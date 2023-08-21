@@ -89,7 +89,7 @@ VERSION_MICRO := 0
 endif
 
 #---------------------------------------------------------------------------------
-TARGET		:=	Universal-Updater
+TARGET		:=	StreetPass-Shop
 BUILD		:=	build
 UNIVCORE	:=	Universal-Core
 SOURCES		:=	$(UNIVCORE) source source/download source/gui source/lang source/menu source/overlays \
@@ -100,8 +100,8 @@ INCLUDES	:=	$(UNIVCORE) include include/download include/gui include/lang includ
 GRAPHICS	:=	assets/gfx
 ROMFS		:=	romfs
 GFXBUILD	:=	$(ROMFS)/gfx
-APP_AUTHOR	:=	Universal-Team
-APP_DESCRIPTION :=	A simple 3DS homebrew updater
+APP_AUTHOR	:=	MattTheTekie
+APP_DESCRIPTION :=	Your one-stop shop for StreetPass data!
 ICON		:=	app/icon.png
 BNR_IMAGE	:=	app/banner.cgfx
 BNR_AUDIO	:=	app/BannerAudio.wav
