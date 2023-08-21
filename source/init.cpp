@@ -49,7 +49,7 @@ std::vector<std::pair<std::string, std::string>> Themes = { };
 static void getCurrentUsage(){
 	u64 id;
 	APT_GetProgramID(&id);
-	is3DSX = (id != 0x0004000004391701);
+	is3DSX = (id != 0x0004000004391700);
 }
 
 /*
