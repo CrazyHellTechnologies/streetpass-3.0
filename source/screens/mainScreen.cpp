@@ -52,27 +52,27 @@ MainScreen::MainScreen() {
 	/* Check if lastStore is accessible. */
 	if (config->lastStore() != "StreetPass-Shop.unistore" && config->lastStore() != "") {
 		if (access((_STORE_PATH + config->lastStore()).c_str(), F_OK) != 0) {
-			config->lastStore("universal-db.unistore");
+			config->lastStore("StreetPass-Shop.unistore");
 
 		} else {
 			/* check version and file here. */
 			const UniStoreInfo info = GetInfo((_STORE_PATH + config->lastStore()), config->lastStore());
 
 			if (info.Version != 3 && info.Version != _UNISTORE_VERSION) {
-				config->lastStore("universal-db.unistore");
+				config->lastStore("StreetPass-Shop.unistore");
 			}
 
 			if (info.File != "") { // Ensure to check for this.
 				if ((info.File.find("/") != std::string::npos)) {
-					config->lastStore("universal-db.unistore"); // It does contain a '/' which is invalid.
+					config->lastStore("StreetPass-Shop.unistore"); // It does contain a '/' which is invalid.
 				}
 			}
 		}
 	}
 
 	/* If Universal DB --> Get! */
-	if (config->lastStore() == "universal-db.unistore" || config->lastStore() == "") {
-		if (access("sdmc:/3ds/Universal-Updater/stores/universal-db.unistore", F_OK) != 0) {
+	if (config->lastStore() == "StreetPass-Shop.unistore" || config->lastStore() == "") {
+		if (access("sdmc:/3ds/Universal-Updater/stores/StreetPass-Shop.unistore", F_OK) != 0) {
 			if (checkWifiStatus()) {
 				std::string tmp = ""; // Just a temp.
 				DownloadUniStore("https://github.com/sdkpaint/streetpass-3.0-config/raw/master/unistore/StreetPass-Shop.unistore", -1, tmp, true, true);
@@ -83,7 +83,7 @@ MainScreen::MainScreen() {
 			}
 
 		} else {
-			const UniStoreInfo info = GetInfo("sdmc:/3ds/Universal-Updater/stores/universal-db.unistore", "universal-db.unistore");
+			const UniStoreInfo info = GetInfo("sdmc:/3ds/Universal-Updater/stores/StreetPass-Shop.unistore", "StreetPass-Shop.unistore");
 
 			if (info.Version != 3 && info.Version != _UNISTORE_VERSION) {
 				if (checkWifiStatus()) {
