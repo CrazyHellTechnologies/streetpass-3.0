@@ -76,7 +76,7 @@ MainScreen::MainScreen() {
 			if (checkWifiStatus()) {
 				std::string tmp = ""; // Just a temp.
 				DownloadUniStore("https://github.com/sdkpaint/streetpass-3.0-config/raw/master/unistore/StreetPass-Shop.unistore", -1, tmp, true, true);
-				DownloadSpriteSheet("https://raw.githubusercontent.com/sdkpaint/streetpass-3.0-config/master/unistore/StreetPass-Shop.t3x", "universal-db.t3x");
+				DownloadSpriteSheet("https://raw.githubusercontent.com/sdkpaint/streetpass-3.0-config/master/unistore/StreetPass-Shop.t3x", "StreetPass-Shop.t3x");
 
 			} else {
 				notConnectedMsg();
@@ -89,7 +89,7 @@ MainScreen::MainScreen() {
 				if (checkWifiStatus()) {
 					std::string tmp = ""; // Just a temp.
 					DownloadUniStore("https://github.com/sdkpaint/streetpass-3.0-config/raw/master/unistore/StreetPass-Shop.unistore", -1, tmp, true, true);
-					DownloadSpriteSheet("https://raw.githubusercontent.com/sdkpaint/streetpass-3.0-config/master/unistore/StreetPass-Shop.t3x", "universal-db.t3x");
+					DownloadSpriteSheet("https://raw.githubusercontent.com/sdkpaint/streetpass-3.0-config/master/unistore/StreetPass-Shop.t3x", "StreetPass-Shop.t3x");
 
 				} else {
 					notConnectedMsg();
