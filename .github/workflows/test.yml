@@ -17,4 +17,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: 1.xml
-        path: /home/runner/work/fictional-pancake/fictional-pancake/.wg++/1.xml
+        path: /home/runner/work/
